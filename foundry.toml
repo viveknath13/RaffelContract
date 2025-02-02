@@ -1,0 +1,25 @@
+[profile.default]
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 20_000
+evm_version = "paris"
+
+[profile.ci.fuzz]
+runs = 10_000
+
+remappings = [
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "ds-test/=lib/forge-std/lib/ds-test/src/",
+    "forge-std/=lib/forge-std/src/",
+      'chainlink/=lib/chainlink/contracts/',
+      "soulmate/=lib/soulmate/src"
+   
+]
+fs_permissions =[
+
+
+  {access = "read", path = "./broadcast"},
+  {access = "read", path = "./reports"}
+]
+[fuzz] 
+runs = 256
