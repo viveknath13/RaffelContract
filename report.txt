@@ -4,14 +4,3 @@ Compiler run successful!
 Analysing contracts...
 Running tests...
 
-Ran 1 test for test/unit/Lottrytest.t.sol:test
-[FAIL: EvmError: Revert] setUp() (gas: 0)
-Suite result: FAILED. 0 passed; 1 failed; 0 skipped; finished in 5.27ms (0.00ns CPU time)
-
-Ran 1 test suite in 5.87ms (5.27ms CPU time): 0 tests passed, 1 failed, 0 skipped (1 total tests)
-
-Failing tests:
-Encountered 1 failing test in test/unit/Lottrytest.t.sol:test
-[FAIL: EvmError: Revert] setUp() (gas: 0)
-
-Encountered a total of 1 failing tests, 0 tests succeeded
